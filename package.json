@@ -1,0 +1,54 @@
+{
+  "name": "web-server",
+  "version": "1.0.0",
+  "description": "Web server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-express": "node ./express/index.js",
+    "start": "node ./dist/main.js",
+    "build": "npx tsc",
+    "dev": "npx nodemon",
+    "generate": "npx prisma generate",
+    "prettier": "prettier --write ./src",
+    "eslint": "npx eslint ./src/**",
+    "eslint:fix": "npx eslint ./src/** --fix"
+  },
+  "keywords": [
+    "node.js",
+    "express"
+  ],
+  "author": "Bogdan Samonov",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.14.0",
+    "nodemon": "^3.1.9",
+    "prettier": "3.4.2",
+    "prisma": "^6.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.20.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "@types/jsonwebtoken": "^9.0.9",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "inversify": "^6.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "reflect-metadata": "^0.2.2",
+    "tslog": "3.2.2"
+  }
+}
